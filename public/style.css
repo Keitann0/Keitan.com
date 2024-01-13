@@ -1,3 +1,4 @@
+/*CSS General*/
 html{
     box-sizing: border-box;
 }
@@ -13,7 +14,6 @@ body{
     background: radial-gradient(circle, rgba(0,83,173,1) 0%, rgba(0,27,133,1) 0%, rgba(0,2,35,1) 100%);
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-    position: fixed;
     height: 8%;
     top: 0;
     left: 0;
@@ -138,6 +138,18 @@ a{
     height: 100vh;
 }
 
+/*Animate.css personalizado*/
+.animate__animated.animate__fadeIn{
+    --animate-duration: 4s;
+    --animate-delay: 2s;
+}
+
+.animate__animated.animate__fadeInUp{
+    --animate-duration: 1s;
+    --animate-delay: 3s;
+}
+
+/*Inicio de Query's*/
 
 /*Laptops pequeñas y tabletas*/
 @media only screen and (max-width : 1224px) {
