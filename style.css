@@ -1,42 +1,49 @@
 /*CSS General*/
-html{
+html {
     box-sizing: border-box;
 }
-body{
+
+body {
     overflow: visible;
 }
-#nav{
+
+#nav {
     padding-top: 20px;
     display: flex;
     text-align: right;
     justify-content: flex-end;
-    background: rgb(0,83,173);
-    background: radial-gradient(circle, rgba(0,83,173,1) 0%, rgba(0,27,133,1) 0%, rgba(0,2,35,1) 100%);
+    background: rgb(0, 83, 173);
+    background: radial-gradient(circle, rgba(0, 83, 173, 1) 0%, rgba(0, 27, 133, 1) 0%, rgba(0, 2, 35, 1) 100%);
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     height: 8%;
     top: 0;
     left: 0;
-    width: 100%;        
+    width: 100%;
 }
-.social{
+
+.social {
     margin-right: 0.5rem;
     font-size: 1.5rem;
 }
-a:hover{
+
+a:hover {
     text-decoration: none;
 }
-.nav-list{
+
+.nav-list {
     font-size: 20px;
     font-family: 'Roboto Slab', serif;
     padding-right: 40px;
     color: white;
     align-self: center;
 }
-.nav-list:hover{
+
+.nav-list:hover {
     color: gold;
 }
-#welcome-section{
+
+#welcome-section {
     background: #18171c;
     padding-top: 0px;
     margin-top: 0px;
@@ -46,39 +53,45 @@ a:hover{
     height: 100vh;
 
 }
-#titulo{
+
+#titulo {
     font-size: 60px;
     font-family: 'Ubuntu', sans-serif;
     color: white;
     font-weight: 300;
     padding-top: 14%;
 }
-#subtitulo{
+
+#subtitulo {
     font-size: 30px;
     font-family: 'Noto Sans', sans-serif;
     color: #d53032;
 
 }
-.inicio{
+
+.inicio {
     text-align: center;
 }
-footer{
+
+footer {
     vertical-align: middle;
     background: black;
     padding-top: 5px;
     padding-bottom: 7px;
 }
-#social-container{
+
+#social-container {
     display: flex;
     padding-top: 50px;
     justify-content: center;
 }
-a{
+
+a {
     padding-left: 6px;
     text-decoration: none;
 }
 
-#about{
+#about {
     background: #18171c;
     padding-top: 0px;
     margin-top: 0px;
@@ -88,7 +101,7 @@ a{
     height: 85vh;
 }
 
-.titulo2{
+.titulo2 {
     font-size: 50px;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
@@ -98,7 +111,7 @@ a{
     padding-bottom: 2%;
 }
 
-#about-text{
+#about-text {
     color: #CCD1D1;
     display: flex;
     margin-left: 5%;
@@ -109,7 +122,7 @@ a{
 
 }
 
-#profilePic{
+#profilePic {
     float: left;
     border-radius: 5%;
     width: 25%;
@@ -119,32 +132,25 @@ a{
 }
 
 
-#tech-list{
+#tech-list {
     margin-top: 2%;
     margin-left: 37%;
     font-size: 4rem;
 }
-.tech{
+
+.tech {
     margin-right: 3%;
 }
 
-#projects{
-    background: #18171c;
-    padding-top: 0px;
-    margin-top: 0px;
-    top: 0;
-    left: 0;
-    display: block;
-    height: 100vh;
-}
+
 
 /*Animate.css personalizado*/
-.animate__animated.animate__fadeIn{
+.animate__animated.animate__fadeIn {
     --animate-duration: 4s;
     --animate-delay: 2s;
 }
 
-.animate__animated.animate__fadeInUp{
+.animate__animated.animate__fadeInUp {
     --animate-duration: 1s;
     --animate-delay: 3s;
 }
@@ -153,10 +159,11 @@ a{
 
 /*Laptops pequeñas y tabletas*/
 @media only screen and (max-width : 1224px) {
-    #nav{
+    #nav {
         height: 11%;
     }
-    #profilePic{
+
+    #profilePic {
         float: left;
         border-radius: 5%;
         width: 35%;
@@ -164,7 +171,8 @@ a{
         margin-bottom: 2%;
         margin-left: 10%;
     }
-    #about-text{
+
+    #about-text {
         color: #CCD1D1;
         display: flex;
         margin-left: 5%;
@@ -172,50 +180,58 @@ a{
         margin-right: 5%;
         font-size: 16px;
         text-align: justify;
-    
+
     }
-    #tech-list{
+
+    #tech-list {
         margin-top: 2%;
         margin-left: 11%;
         margin-bottom: 2%;
         font-size: 2.6rem;
     }
-    .tech{
+
+    .tech {
         margin-right: 1%;
     }
-   }
+}
 
 /*Laptops*/
 @media only screen and (max-width : 1366px) {
-    #nav{
+    #nav {
         height: 11%;
     }
-   }
+}
 
 /*Celulares*/
 @media only screen and (max-width : 900px) {
-    #nav{
+    #nav {
         position: relative;
         height: 9%;
     }
-    .nav-list{
+
+    .nav-list {
         font-size: 18px;
     }
-    #titulo{
+
+    #titulo {
         font-size: 50px;
         padding-top: 150px;
     }
-    #subtitulo{
+
+    #subtitulo {
         font-size: 23px;
     }
-    #social-container{
+
+    #social-container {
         padding-top: 10px;
     }
-    #welcome-section{
+
+    #welcome-section {
         height: 98vh;
 
     }
-    #profilePic{
+
+    #profilePic {
         float: none;
         border-radius: 5%;
         width: 50%;
@@ -224,7 +240,8 @@ a{
         margin-top: 5%;
         margin-left: 0%;
     }
-    #about-text{
+
+    #about-text {
         color: #CCD1D1;
         display: flex;
         margin-left: 7%;
@@ -232,24 +249,152 @@ a{
         margin-right: 7%;
         font-size: 16px;
         text-align: justify;
-    
+
     }
-    #tech-list{
+
+    #tech-list {
         margin-top: 2%;
         margin-left: 11%;
         font-size: 2.6rem;
     }
-    .tech{
+
+    .tech {
         margin-right: 1%;
     }
-    }
+}
 
-    /*Google Icons*/
-    .material-symbols-outlined {
+/*Google Icons*/
+.material-symbols-outlined {
     font-size: 5rem;
     font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 48
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'48
+}
+
+/* ==================== Estilos de seccion Tecnologias */
+#tech-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* Espacio entre iconos */
+    padding: 20px 0;
+    /* Espacio superior e inferior dentro de la lista de tecnologías */
+    flex-wrap: wrap;
+    /* Permite que los iconos se envuelvan en pantallas más pequeñas */
+}
+
+#tech-list i {
+    font-size: 2.5rem;
+    /* Tamaño de los iconos ajustado */
+    color: #ffffff;
+    /* Color de los iconos */
+    cursor: pointer;
+    position: relative;
+    /* Posición relativa para los tooltips */
+}
+
+#tech-list i:hover {
+    color: gold;
+    /* Color al pasar el cursor */
+}
+
+/* Tooltips */
+#tech-list i[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 100%;
+    /* Coloca el tooltip encima del icono */
+    left: 50%;
+    transform: translateX(-50%) translateY(-8px);
+    /* Ajusta la posición para que aparezca sobre el icono */
+    background-color: #333;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    white-space: nowrap;
+    z-index: 1000;
+    /* Asegúrate de que el tooltip está por encima de otros elementos */
+}
+
+#tech-list i[title]:hover::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    /* Ajusta la posición del triángulo del tooltip */
+    border: 5px solid transparent;
+    border-top-color: #333;
+    /* Color del triángulo que apunta al tooltip */
+    z-index: 1001;
+    /* Por encima del after para que se vea como parte del tooltip */
+}
+
+
+
+/*  ==================== Estilos de seccion proyectos */
+
+#projects .titulo2 {
+    color: #007bff;
+    /* Color personalizado para el título */
+    margin-bottom: 1rem;
+}
+
+.card-title {
+    color: #343a40;
+    /* Color del título de la tarjeta */
+}
+
+.card-text {
+    color: #6c757d;
+    /* Color del texto de la tarjeta */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Efecto al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra al pasar el mouse */
+}
+
+.card-img-top-fit {
+    width: 100%;
+    /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+    height: 200px;
+    /* Altura fija para todas las imágenes */
+    object-fit: cover;
+    /* Asegura que la imagen cubra completamente el espacio sin deformarse */
+    object-position: center;
+    /* Centra la imagen dentro del contenedor */
+    border-radius: 0.25rem 0.25rem 0 0;
+    /* Opcional: redondea las esquinas superiores para ajustarse al estilo de la tarjeta */
+}
+
+/* Clase para ajustar el tamaño de las imágenes dentro de las tarjetas */
+.card-img-top-fit {
+    /* Redondear los bordes de las imagenes */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 200px;
+    /* Ajusta la altura según tus necesidades */
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Clase para redondear los bordes de las tarjetas */
+.rounded-card {
+    border-radius: 15px;
+}
+
+#projects h5 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.card-img-overlay {
+    position: relative;
 }
