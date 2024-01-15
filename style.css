@@ -273,7 +273,70 @@ a {
         'opsz'48
 }
 
-/*  Estilos de seccion proyectos */
+/* ==================== Estilos de seccion Tecnologias */
+#tech-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* Espacio entre iconos */
+    padding: 20px 0;
+    /* Espacio superior e inferior dentro de la lista de tecnologías */
+    flex-wrap: wrap;
+    /* Permite que los iconos se envuelvan en pantallas más pequeñas */
+}
+
+#tech-list i {
+    font-size: 2.5rem;
+    /* Tamaño de los iconos ajustado */
+    color: #ffffff;
+    /* Color de los iconos */
+    cursor: pointer;
+    position: relative;
+    /* Posición relativa para los tooltips */
+}
+
+#tech-list i:hover {
+    color: gold;
+    /* Color al pasar el cursor */
+}
+
+/* Tooltips */
+#tech-list i[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 100%;
+    /* Coloca el tooltip encima del icono */
+    left: 50%;
+    transform: translateX(-50%) translateY(-8px);
+    /* Ajusta la posición para que aparezca sobre el icono */
+    background-color: #333;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    white-space: nowrap;
+    z-index: 1000;
+    /* Asegúrate de que el tooltip está por encima de otros elementos */
+}
+
+#tech-list i[title]:hover::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    /* Ajusta la posición del triángulo del tooltip */
+    border: 5px solid transparent;
+    border-top-color: #333;
+    /* Color del triángulo que apunta al tooltip */
+    z-index: 1001;
+    /* Por encima del after para que se vea como parte del tooltip */
+}
+
+
+
+/*  ==================== Estilos de seccion proyectos */
 
 #projects .titulo2 {
     color: #007bff;
@@ -313,6 +376,9 @@ a {
 
 /* Clase para ajustar el tamaño de las imágenes dentro de las tarjetas */
 .card-img-top-fit {
+    /* Redondear los bordes de las imagenes */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     width: 100%;
     height: 200px;
     /* Ajusta la altura según tus necesidades */
