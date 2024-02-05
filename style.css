@@ -33,7 +33,7 @@ a:hover {
 
 .nav-list {
     font-size: 20px;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Black Ops One', system-ui;
     padding-right: 40px;
     color: white;
     align-self: center;
@@ -64,7 +64,7 @@ a:hover {
 
 #subtitulo {
     font-size: 30px;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     color: #d53032;
 
 }
